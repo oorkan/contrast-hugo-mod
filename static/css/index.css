@@ -52,11 +52,11 @@ b, strong, th {
 
 a {
   color: inherit;
-  text-decoration: inherit;
+  /*text-decoration: inherit;*/
 }
 
 a:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 article a {
