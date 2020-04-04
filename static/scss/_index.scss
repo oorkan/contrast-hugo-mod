@@ -52,11 +52,6 @@ b, strong, th {
 
 a {
   color: inherit;
-  /*text-decoration: inherit;*/
-}
-
-a:hover {
-  /*text-decoration: underline;*/
 }
 
 article a {
@@ -163,10 +158,4 @@ nav a {
 
 body > header, body > article, body > footer {
   padding: 1.5em;
-}
-
-@media (min-width: 32em) {
-  body > header, body > article, body > footer {
-    /*padding: 1.75em calc(38% - 12em);*/
-  }
 }
