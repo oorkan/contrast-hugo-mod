@@ -1,0 +1,24 @@
+{
+  "name": "sass-to-css",
+  "version": "1.0.0",
+  "description": "Simple scss to css npm task runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss/style.scss css/style.css",
+    "scss:watch": "npm run scss && npm run scss -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oorkan/sass-to-css.git"
+  },
+  "author": "oorkan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oorkan/sass-to-css/issues"
+  },
+  "homepage": "https://github.com/oorkan/sass-to-css#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
