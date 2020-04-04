@@ -16,10 +16,8 @@
 
 <body>
 
-<header class="icons">
-  {{ if not (gt (len .Site.Menus) 1) }}
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-  {{ end }}
+<header>
+  <a href="{{ .Site.BaseURL }}">🏠 Home</a>
   {{ range $menu, $items := .Site.Menus }}
     <nav>
     {{ range $items }}

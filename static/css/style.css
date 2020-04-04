@@ -54,11 +54,7 @@ b, strong, th {
   font-weight: 600; }
 
 a {
-  color: inherit;
-  /*text-decoration: inherit;*/ }
-
-a:hover {
-  /*text-decoration: underline;*/ }
+  color: inherit; }
 
 article a {
   color: #68f; }
@@ -146,10 +142,6 @@ nav a {
 body > header, body > article, body > footer {
   padding: 1.5em; }
 
-@media (min-width: 32em) {
-  body > header, body > article, body > footer {
-    /*padding: 1.75em calc(38% - 12em);*/ } }
-
 .archive li {
   font-size: 1.1em; }
 
@@ -174,11 +166,3 @@ body > header, body > article, body > footer {
   color: #fff;
   background: #68f;
   text-decoration: inherit; }
-
-.icons svg {
-  height: 1em;
-  width: 1em;
-  fill: currentColor;
-  transition: .2s color;
-  vertical-align: middle;
-  margin-bottom: .15em; }
