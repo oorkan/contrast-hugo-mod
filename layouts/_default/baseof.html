@@ -8,9 +8,6 @@
 {{- end }}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
-{{- if .Site.Params.sidebar }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/sidebar.css" media="screen and (min-width: 70em)">
-{{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="alternate" type="application/rss+xml" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="{{ .Site.Title }}">
 {{- if or .Params.math .Site.Params.math }}
