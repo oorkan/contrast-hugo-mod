@@ -1,0 +1,11 @@
+.list {
+    list-style-type: none;
+
+    li {
+        padding: 0 1em;
+
+        &:hover {
+            border-left: 10px solid var(--violet);
+        }
+    }
+}

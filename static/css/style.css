@@ -1,8 +1,6 @@
-/*
- * Use CSS variables!
- */
 :root {
-  --red: crimson; }
+  --red: crimson;
+  --violet: #9768d1; }
 
 /*
  * Highlight images missing alt text!
@@ -147,3 +145,10 @@ body > header, body > article, body > footer {
 
 .hidden {
   display: none; }
+
+.list {
+  list-style-type: none; }
+  .list li {
+    padding: 0 1em; }
+    .list li:hover {
+      border-left: 10px solid var(--violet); }

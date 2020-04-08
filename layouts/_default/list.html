@@ -6,7 +6,7 @@
   {{ $Pages = (where .Site.RegularPages "Section" "blog") }}
 {{ end }}
 
-<ul>
+<ul class='list'>
   {{ range $Pages }}
   <li>
     <a href="{{ .Permalink }}">{{ .Title }}</a>
