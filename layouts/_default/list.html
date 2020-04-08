@@ -9,7 +9,7 @@
 <ul class='list'>
   {{ range $Pages }}
   <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href='{{ .Permalink }}' class='display-block'>{{ .Title }} ( <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 02, 2006" }}</time> )</a>
   </li>
   {{ end }}
 </ul>

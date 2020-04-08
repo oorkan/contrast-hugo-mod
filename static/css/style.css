@@ -1,6 +1,12 @@
 :root {
   --red: crimson;
-  --violet: #9768d1; }
+  --darkViolet: #6331a0;
+  --violet: #9667d0;
+  --extraLightViolet: #e7dcf4;
+  --electricBlue: #0a8abd;
+  --extraLightElectricBlue: #69cff7;
+  --darkElectricBlue: #05435c
+; }
 
 /*
  * Highlight images missing alt text!
@@ -137,6 +143,9 @@ nav a {
 body > header, body > article, body > footer {
   padding: 1.5em; }
 
+.display-block {
+  display: block; }
+
 .text-center {
   text-align: center; }
 
@@ -147,8 +156,16 @@ body > header, body > article, body > footer {
   display: none; }
 
 .list {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0 2em; }
   .list li {
-    padding: 0 1em; }
+    padding: 0.5em 1em;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease; }
     .list li:hover {
-      border-left: 10px solid var(--violet); }
+      margin-left: 1em;
+      border-left: 10px solid var(--violet);
+      background-color: var(--extraLightViolet); }
+      .list li:hover a {
+        color: var(--darkViolet); }

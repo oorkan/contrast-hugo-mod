@@ -1,11 +1,19 @@
 .list {
     list-style-type: none;
+    padding: 0 2em;
 
     li {
-        padding: 0 1em;
+        padding: 0.5em 1em;
+        @include transition();
 
         &:hover {
+            margin-left: 1em;
             border-left: 10px solid var(--violet);
+            background-color: var(--extraLightViolet);
+
+            a {
+                color: var(--darkViolet);
+            }
         }
     }
 }

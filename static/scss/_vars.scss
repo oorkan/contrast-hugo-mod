@@ -1,7 +1,17 @@
 $red: crimson;
-$violet: #9768d1;
+$darkElectricBlue: hsl(197, 90%, 19%);
+$electricBlue: hsl(197, 90%, 39%);
+$extraLightElectricBlue: hsl(197, 90%, 69%);
+$darkViolet: hsl(267, 53%, 41%);
+$violet: hsl(267, 53%, 61%);
+$extraLightViolet: hsl(267, 53%, 91%);
 
 :root {
     --red: #{$red};
+    --darkViolet: #{$darkViolet};
     --violet: #{$violet};
+    --extraLightViolet: #{$extraLightViolet};
+    --electricBlue: #{$electricBlue};
+    --extraLightElectricBlue: #{$extraLightElectricBlue};
+    --darkElectricBlue: #{$darkElectricBlue}
 }
