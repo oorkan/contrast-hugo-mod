@@ -16,11 +16,11 @@
 
 <body>
 
-<header id="site-header">
+<header id="site-header" class="offset">
   <a href="{{ .Site.BaseURL }}">🏠 Home</a>
 </header>
 
-<main id="page-content">
+<main id="page-content" class="offset">
   {{- block "main" . }}{{- end }}
 </main>
 
