@@ -16,10 +16,13 @@
 
 <body>
 
-<header>
+<header id="site-header">
   <a href="{{ .Site.BaseURL }}">🏠 Home</a>
-</header>           
-{{- block "main" . }}{{- end }}
+</header>
+
+<main id="page-content">
+  {{- block "main" . }}{{- end }}
+</main>
 
 {{ partial "footer.htm" . }}
 
