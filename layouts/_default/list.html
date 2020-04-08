@@ -1,11 +1,17 @@
 {{ define "main" }}
 
+{{ $Pages := .Pages }}
+
+{{ if .IsHome }}
+  {{ $Pages = where .Site.Pages "Section" "blog" }}
+{{ end }}
+
 <ul>
-{{ range .Pages }}
+  {{ range $Pages }}
   <li>
     <a href="{{ .URL }}">{{ .Title }}</a>
   </li>
-{{ end }}
+  {{ end }}
 </ul>
 
 {{ end }}
