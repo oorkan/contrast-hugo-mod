@@ -40,6 +40,8 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
