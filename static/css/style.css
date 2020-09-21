@@ -1,5 +1,6 @@
 :root {
   --red: crimson;
+  --darkerRed: #C30023;
   --darkViolet: #6331a0;
   --violet: #9667d0;
   --extraLightViolet: #e7dcf4;
@@ -174,3 +175,18 @@ nav a {
       background-color: var(--extraLightViolet); }
       .list li:hover a {
         color: var(--darkViolet); }
+
+#paginate .pagination {
+  padding: 0 3rem;
+  margin: 2rem 0;
+  list-style-type: none; }
+  #paginate .pagination .page-item {
+    display: inline-block; }
+    #paginate .pagination .page-item:not(:last-of-type) {
+      margin-right: 1rem; }
+    #paginate .pagination .page-item a {
+      cursor: pointer;
+      color: var(--red);
+      text-decoration: none; }
+      #paginate .pagination .page-item a:hover {
+        color: var(--darkerRed); }
