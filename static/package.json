@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oorkan/sass-to-css.git"
+    "url": "git+https://github.com/oorkan/scss-to-css.git"
   },
   "author": "oorkan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/oorkan/sass-to-css/issues"
+    "url": "https://github.com/oorkan/scss-to-css/issues"
   },
-  "homepage": "https://github.com/oorkan/sass-to-css#readme",
+  "homepage": "https://github.com/oorkan/scss-to-css#readme",
   "dependencies": {
     "node-sass": "^4.13.1"
   }
