@@ -6,6 +6,8 @@ $extraLightElectricBlue: hsl(197, 90%, 69%);
 $darkViolet: hsl(267, 53%, 41%);
 $violet: hsl(267, 53%, 61%);
 $extraLightViolet: hsl(267, 53%, 91%);
+$skyBlue: #00A4EF;
+$yellow: #FFB900;
 
 :root {
     --red: #{$red};
@@ -15,5 +17,7 @@ $extraLightViolet: hsl(267, 53%, 91%);
     --extraLightViolet: #{$extraLightViolet};
     --electricBlue: #{$electricBlue};
     --extraLightElectricBlue: #{$extraLightElectricBlue};
-    --darkElectricBlue: #{$darkElectricBlue}
+    --darkElectricBlue: #{$darkElectricBlue};
+    --skyBlue: #{$skyBlue};
+    --yellow: #{$yellow};
 }
