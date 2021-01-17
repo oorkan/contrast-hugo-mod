@@ -13,19 +13,37 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
-  html {
+html {
+  &[data-color-mode="dark"] {
+    background: #1c1d22;
+    color: #ffffff;
+    @import 'highlighter/monokai';
+  }
+
+  &[data-color-mode="light"] {
     background: #ffffff;
     color: #1c1d22;
+    @import 'highlighter/monokailight';
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    background: #1c1d22;
-    color: #ffffff;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   html {
+//     background: #ffffff;
+//     color: #1c1d22;
+//   }
+
+//   @import 'highlighter/monokailight';
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     background: #1c1d22;
+//     color: #ffffff;
+//   }
+
+//   @import 'highlighter/monokai';
+// }
 
 html {
   font-size: 16px;

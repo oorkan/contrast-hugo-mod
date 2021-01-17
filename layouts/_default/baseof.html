@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ .Site.LanguageCode | default "en" }}" data-color-mode="light">
 <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 <meta charset="utf-8">
 {{ hugo.Generator }}
@@ -24,13 +24,16 @@ ga('send', 'pageview');
 {{ end }}
 {{ end }}
 
-<body>
+<body class="{{- if .Site.Params.dark_mode }}dl-mode-enabled{{- end }}">
 
 <header id="site-header" class="offset">
   <a href="{{ .Site.BaseURL }}" class="site-logo">
     <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" width="48" height="48">
     <span>{{ .Site.Title }}</span>
   </a>
+  {{- if .Site.Params.darkMode }}
+  {{ partial "dl-mode-toggle.htm" . }}
+  {{- end }}
 </header>
 
 <main id="page-content" class="offset">

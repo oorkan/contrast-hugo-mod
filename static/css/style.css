@@ -32,15 +32,471 @@ img:not([alt]) {
     font-weight: bold;
     font-style: normal; } }
 
-@media (prefers-color-scheme: light) {
-  html {
-    background: #ffffff;
-    color: #1c1d22; } }
+html[data-color-mode="dark"] {
+  background: #1c1d22;
+  color: #ffffff;
+  /* Background */
+  /* Other */
+  /* Error */
+  /* LineTableTD */
+  /* LineTable */
+  /* LineHighlight */
+  /* LineNumbersTable */
+  /* LineNumbers */
+  /* Keyword */
+  /* KeywordConstant */
+  /* KeywordDeclaration */
+  /* KeywordNamespace */
+  /* KeywordPseudo */
+  /* KeywordReserved */
+  /* KeywordType */
+  /* Name */
+  /* NameAttribute */
+  /* NameBuiltin */
+  /* NameBuiltinPseudo */
+  /* NameClass */
+  /* NameConstant */
+  /* NameDecorator */
+  /* NameEntity */
+  /* NameException */
+  /* NameFunction */
+  /* NameFunctionMagic */
+  /* NameLabel */
+  /* NameNamespace */
+  /* NameOther */
+  /* NameProperty */
+  /* NameTag */
+  /* NameVariable */
+  /* NameVariableClass */
+  /* NameVariableGlobal */
+  /* NameVariableInstance */
+  /* NameVariableMagic */
+  /* Literal */
+  /* LiteralDate */
+  /* LiteralString */
+  /* LiteralStringAffix */
+  /* LiteralStringBacktick */
+  /* LiteralStringChar */
+  /* LiteralStringDelimiter */
+  /* LiteralStringDoc */
+  /* LiteralStringDouble */
+  /* LiteralStringEscape */
+  /* LiteralStringHeredoc */
+  /* LiteralStringInterpol */
+  /* LiteralStringOther */
+  /* LiteralStringRegex */
+  /* LiteralStringSingle */
+  /* LiteralStringSymbol */
+  /* LiteralNumber */
+  /* LiteralNumberBin */
+  /* LiteralNumberFloat */
+  /* LiteralNumberHex */
+  /* LiteralNumberInteger */
+  /* LiteralNumberIntegerLong */
+  /* LiteralNumberOct */
+  /* Operator */
+  /* OperatorWord */
+  /* Punctuation */
+  /* Comment */
+  /* CommentHashbang */
+  /* CommentMultiline */
+  /* CommentSingle */
+  /* CommentSpecial */
+  /* CommentPreproc */
+  /* CommentPreprocFile */
+  /* Generic */
+  /* GenericDeleted */
+  /* GenericEmph */
+  /* GenericError */
+  /* GenericHeading */
+  /* GenericInserted */
+  /* GenericOutput */
+  /* GenericPrompt */
+  /* GenericStrong */
+  /* GenericSubheading */
+  /* GenericTraceback */
+  /* GenericUnderline */
+  /* TextWhitespace */ }
+  html[data-color-mode="dark"] .chroma {
+    color: #f8f8f2;
+    /*background-color: #272822;*/
+    background-color: rgba(142, 142, 145, 0.12); }
+  html[data-color-mode="dark"] .chroma .err {
+    color: #960050;
+    background-color: #1e0010; }
+  html[data-color-mode="dark"] .chroma .lntd {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  html[data-color-mode="dark"] .chroma .lntable {
+    border-spacing: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: auto;
+    overflow: auto;
+    display: block; }
+  html[data-color-mode="dark"] .chroma .hl {
+    display: block;
+    width: 100%;
+    background-color: #ffffcc; }
+  html[data-color-mode="dark"] .chroma .lnt {
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+    color: #7f7f7f; }
+  html[data-color-mode="dark"] .chroma .ln {
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+    color: #7f7f7f; }
+  html[data-color-mode="dark"] .chroma .k {
+    color: #66d9ef; }
+  html[data-color-mode="dark"] .chroma .kc {
+    color: #66d9ef; }
+  html[data-color-mode="dark"] .chroma .kd {
+    color: #66d9ef; }
+  html[data-color-mode="dark"] .chroma .kn {
+    color: #f92672; }
+  html[data-color-mode="dark"] .chroma .kp {
+    color: #66d9ef; }
+  html[data-color-mode="dark"] .chroma .kr {
+    color: #66d9ef; }
+  html[data-color-mode="dark"] .chroma .kt {
+    color: #66d9ef; }
+  html[data-color-mode="dark"] .chroma .na {
+    color: #a6e22e; }
+  html[data-color-mode="dark"] .chroma .nc {
+    color: #a6e22e; }
+  html[data-color-mode="dark"] .chroma .no {
+    color: #66d9ef; }
+  html[data-color-mode="dark"] .chroma .nd {
+    color: #a6e22e; }
+  html[data-color-mode="dark"] .chroma .ne {
+    color: #a6e22e; }
+  html[data-color-mode="dark"] .chroma .nf {
+    color: #a6e22e; }
+  html[data-color-mode="dark"] .chroma .nx {
+    color: #a6e22e; }
+  html[data-color-mode="dark"] .chroma .nt {
+    color: #f92672; }
+  html[data-color-mode="dark"] .chroma .l {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .ld {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .s {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .sa {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .sb {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .sc {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .dl {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .sd {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .s2 {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .se {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .sh {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .si {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .sx {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .sr {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .s1 {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .ss {
+    color: #e6db74; }
+  html[data-color-mode="dark"] .chroma .m {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .mb {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .mf {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .mh {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .mi {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .il {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .mo {
+    color: #ae81ff; }
+  html[data-color-mode="dark"] .chroma .o {
+    color: #f92672; }
+  html[data-color-mode="dark"] .chroma .ow {
+    color: #f92672; }
+  html[data-color-mode="dark"] .chroma .c {
+    color: #75715e; }
+  html[data-color-mode="dark"] .chroma .ch {
+    color: #75715e; }
+  html[data-color-mode="dark"] .chroma .cm {
+    color: #75715e; }
+  html[data-color-mode="dark"] .chroma .c1 {
+    color: #75715e; }
+  html[data-color-mode="dark"] .chroma .cs {
+    color: #75715e; }
+  html[data-color-mode="dark"] .chroma .cp {
+    color: #75715e; }
+  html[data-color-mode="dark"] .chroma .cpf {
+    color: #75715e; }
+  html[data-color-mode="dark"] .chroma .gd {
+    color: #f92672; }
+  html[data-color-mode="dark"] .chroma .ge {
+    font-style: italic; }
+  html[data-color-mode="dark"] .chroma .gi {
+    color: #a6e22e; }
+  html[data-color-mode="dark"] .chroma .gs {
+    font-weight: bold; }
+  html[data-color-mode="dark"] .chroma .gu {
+    color: #75715e; }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    background: #1c1d22;
-    color: #ffffff; } }
+html[data-color-mode="light"] {
+  background: #ffffff;
+  color: #1c1d22;
+  /* Background */
+  /* Other */
+  /* Error */
+  /* LineTableTD */
+  /* LineTable */
+  /* LineHighlight */
+  /* LineNumbersTable */
+  /* LineNumbers */
+  /* Keyword */
+  /* KeywordConstant */
+  /* KeywordDeclaration */
+  /* KeywordNamespace */
+  /* KeywordPseudo */
+  /* KeywordReserved */
+  /* KeywordType */
+  /* Name */
+  /* NameAttribute */
+  /* NameBuiltin */
+  /* NameBuiltinPseudo */
+  /* NameClass */
+  /* NameConstant */
+  /* NameDecorator */
+  /* NameEntity */
+  /* NameException */
+  /* NameFunction */
+  /* NameFunctionMagic */
+  /* NameLabel */
+  /* NameNamespace */
+  /* NameOther */
+  /* NameProperty */
+  /* NameTag */
+  /* NameVariable */
+  /* NameVariableClass */
+  /* NameVariableGlobal */
+  /* NameVariableInstance */
+  /* NameVariableMagic */
+  /* Literal */
+  /* LiteralDate */
+  /* LiteralString */
+  /* LiteralStringAffix */
+  /* LiteralStringBacktick */
+  /* LiteralStringChar */
+  /* LiteralStringDelimiter */
+  /* LiteralStringDoc */
+  /* LiteralStringDouble */
+  /* LiteralStringEscape */
+  /* LiteralStringHeredoc */
+  /* LiteralStringInterpol */
+  /* LiteralStringOther */
+  /* LiteralStringRegex */
+  /* LiteralStringSingle */
+  /* LiteralStringSymbol */
+  /* LiteralNumber */
+  /* LiteralNumberBin */
+  /* LiteralNumberFloat */
+  /* LiteralNumberHex */
+  /* LiteralNumberInteger */
+  /* LiteralNumberIntegerLong */
+  /* LiteralNumberOct */
+  /* Operator */
+  /* OperatorWord */
+  /* Punctuation */
+  /* Comment */
+  /* CommentHashbang */
+  /* CommentMultiline */
+  /* CommentSingle */
+  /* CommentSpecial */
+  /* CommentPreproc */
+  /* CommentPreprocFile */
+  /* Generic */
+  /* GenericDeleted */
+  /* GenericEmph */
+  /* GenericError */
+  /* GenericHeading */
+  /* GenericInserted */
+  /* GenericOutput */
+  /* GenericPrompt */
+  /* GenericStrong */
+  /* GenericSubheading */
+  /* GenericTraceback */
+  /* GenericUnderline */
+  /* TextWhitespace */ }
+  html[data-color-mode="light"] .chroma {
+    color: #272822;
+    /*background-color: #fafafa;*/
+    background-color: #f1f1f1; }
+  html[data-color-mode="light"] .chroma .err {
+    color: #960050;
+    background-color: #1e0010; }
+  html[data-color-mode="light"] .chroma .lntd {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  html[data-color-mode="light"] .chroma .lntable {
+    border-spacing: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: auto;
+    overflow: auto;
+    display: block; }
+  html[data-color-mode="light"] .chroma .hl {
+    display: block;
+    width: 100%;
+    background-color: #ffffcc; }
+  html[data-color-mode="light"] .chroma .lnt {
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+    color: #7f7f7f; }
+  html[data-color-mode="light"] .chroma .ln {
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+    color: #7f7f7f; }
+  html[data-color-mode="light"] .chroma .k {
+    color: #00a8c8; }
+  html[data-color-mode="light"] .chroma .kc {
+    color: #00a8c8; }
+  html[data-color-mode="light"] .chroma .kd {
+    color: #00a8c8; }
+  html[data-color-mode="light"] .chroma .kn {
+    color: #f92672; }
+  html[data-color-mode="light"] .chroma .kp {
+    color: #00a8c8; }
+  html[data-color-mode="light"] .chroma .kr {
+    color: #00a8c8; }
+  html[data-color-mode="light"] .chroma .kt {
+    color: #00a8c8; }
+  html[data-color-mode="light"] .chroma .n {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .na {
+    color: #75af00; }
+  html[data-color-mode="light"] .chroma .nb {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .bp {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .nc {
+    color: #75af00; }
+  html[data-color-mode="light"] .chroma .no {
+    color: #00a8c8; }
+  html[data-color-mode="light"] .chroma .nd {
+    color: #75af00; }
+  html[data-color-mode="light"] .chroma .ni {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .ne {
+    color: #75af00; }
+  html[data-color-mode="light"] .chroma .nf {
+    color: #75af00; }
+  html[data-color-mode="light"] .chroma .fm {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .nl {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .nn {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .nx {
+    color: #75af00; }
+  html[data-color-mode="light"] .chroma .py {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .nt {
+    color: #f92672; }
+  html[data-color-mode="light"] .chroma .nv {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .vc {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .vg {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .vi {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .vm {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .l {
+    color: #ae81ff; }
+  html[data-color-mode="light"] .chroma .ld {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .s {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .sa {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .sb {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .sc {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .dl {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .sd {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .s2 {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .se {
+    color: #8045ff; }
+  html[data-color-mode="light"] .chroma .sh {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .si {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .sx {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .sr {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .s1 {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .ss {
+    color: #d88200; }
+  html[data-color-mode="light"] .chroma .m {
+    color: #ae81ff; }
+  html[data-color-mode="light"] .chroma .mb {
+    color: #ae81ff; }
+  html[data-color-mode="light"] .chroma .mf {
+    color: #ae81ff; }
+  html[data-color-mode="light"] .chroma .mh {
+    color: #ae81ff; }
+  html[data-color-mode="light"] .chroma .mi {
+    color: #ae81ff; }
+  html[data-color-mode="light"] .chroma .il {
+    color: #ae81ff; }
+  html[data-color-mode="light"] .chroma .mo {
+    color: #ae81ff; }
+  html[data-color-mode="light"] .chroma .o {
+    color: #f92672; }
+  html[data-color-mode="light"] .chroma .ow {
+    color: #f92672; }
+  html[data-color-mode="light"] .chroma .p {
+    color: #111111; }
+  html[data-color-mode="light"] .chroma .c {
+    color: #75715e; }
+  html[data-color-mode="light"] .chroma .ch {
+    color: #75715e; }
+  html[data-color-mode="light"] .chroma .cm {
+    color: #75715e; }
+  html[data-color-mode="light"] .chroma .c1 {
+    color: #75715e; }
+  html[data-color-mode="light"] .chroma .cs {
+    color: #75715e; }
+  html[data-color-mode="light"] .chroma .cp {
+    color: #75715e; }
+  html[data-color-mode="light"] .chroma .cpf {
+    color: #75715e; }
+  html[data-color-mode="light"] .chroma .ge {
+    font-style: italic; }
+  html[data-color-mode="light"] .chroma .gs {
+    font-weight: bold; }
 
 html {
   font-size: 16px;
@@ -157,6 +613,53 @@ nav a {
     margin: 0; }
   .site-logo span {
     margin-left: 1rem; }
+
+.dl-mode-toggle {
+  position: relative; }
+  .dl-mode-toggle, .dl-mode-toggle * {
+    box-sizing: border-box; }
+  .dl-mode-toggle.transition-set .dl-mode-toggle-thumb,
+  .dl-mode-toggle.transition-set .dl-mode-toggle-track,
+  .dl-mode-toggle.transition-set .dl-mode-toggle-moon,
+  .dl-mode-toggle.transition-set .dl-mode-toggle-sun {
+    transition: all 0.3s cubic-bezier(0.4, 0.03, 0, 1) 0.05s; }
+
+.dl-mode-toggle-track {
+  width: 56px;
+  height: 32px;
+  border-radius: 32px;
+  border: 3px solid #d1d5da;
+  background-color: #fff; }
+
+.dl-mode-toggle-thumb {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #F8F9FB;
+  border: 2px solid #9EA2A7;
+  cursor: pointer; }
+
+.dl-mode-toggle-moon {
+  opacity: 0; }
+
+.dl-mode-toggle-sun {
+  opacity: 1; }
+
+[data-color-mode="dark"] .dl-mode-toggle-thumb {
+  transform: translateX(23px); }
+
+[data-color-mode="dark"] .dl-mode-toggle-thumb,
+[data-color-mode="dark"] .dl-mode-toggle-track {
+  background-color: #1c1d22; }
+
+[data-color-mode="dark"] .dl-mode-toggle-sun {
+  opacity: 0; }
+
+[data-color-mode="dark"] .dl-mode-toggle-moon {
+  opacity: 1; }
 
 .display-block {
   display: block; }
