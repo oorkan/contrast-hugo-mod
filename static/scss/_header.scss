@@ -1,0 +1,28 @@
+#site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(142, 142, 145, .16);
+}
+
+.site-logo {
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--skyBlue);
+
+  &:hover {
+    color: var(--yellow);
+  }
+
+  img {
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    margin: 0;
+  }
+
+  span {
+    margin-left: 1rem;
+  }
+}

@@ -27,7 +27,10 @@ ga('send', 'pageview');
 <body>
 
 <header id="site-header" class="offset">
-  <a href="{{ .Site.BaseURL }}">🏠 Home</a>
+  <a href="{{ .Site.BaseURL }}" class="site-logo">
+    <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" width="48" height="48">
+    <span>{{ .Site.Title }}</span>
+  </a>
 </header>
 
 <main id="page-content" class="offset">

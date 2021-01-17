@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --red: crimson;
   --darkerRed: #C30023;
@@ -6,8 +7,10 @@
   --extraLightViolet: #e7dcf4;
   --electricBlue: #0a8abd;
   --extraLightElectricBlue: #69cff7;
-  --darkElectricBlue: #05435c
-; }
+  --darkElectricBlue: #05435c;
+  --skyBlue: #00A4EF;
+  --yellow: #FFB900;
+  --lightGray: #7b7b7b; }
 
 /*
  * Highlight images missing alt text!
@@ -146,6 +149,27 @@ nav a {
 .offset {
   padding: 1.5em; }
 
+#site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(142, 142, 145, 0.16); }
+
+.site-logo {
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--skyBlue); }
+  .site-logo:hover {
+    color: var(--yellow); }
+  .site-logo img {
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    margin: 0; }
+  .site-logo span {
+    margin-left: 1rem; }
+
 .display-block {
   display: block; }
 
@@ -161,20 +185,29 @@ nav a {
 .hidden {
   display: none; }
 
-.list {
+.postlist {
   list-style-type: none;
   padding: 0 2em; }
-  .list li {
-    padding: 0.5em 1em;
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: ease; }
-    .list li:hover {
-      margin-left: 1em;
-      border-left: 10px solid var(--violet);
-      background-color: var(--extraLightViolet); }
-      .list li:hover a {
-        color: var(--darkViolet); }
+  .postlist li {
+    padding: .25em 1em;
+    transition: margin .1s ease-out; }
+    .postlist li a {
+      text-decoration: none;
+      font-weight: 700; }
+    .postlist li time {
+      font-size: .65em;
+      text-transform: uppercase;
+      color: var(--lightGray); }
+    .postlist li:hover {
+      margin-left: 1em; }
+      .postlist li:hover a {
+        color: var(--skyBlue); }
+        .postlist li:hover a span:before {
+          content: '⋙';
+          margin-right: .5rem; }
+        .postlist li:hover a span:after {
+          margin-left: .5rem;
+          content: '✨'; }
 
 #paginate .pagination {
   padding: 0 3rem;
