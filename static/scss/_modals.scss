@@ -15,7 +15,20 @@
     border-radius: 8px;
     transform: translateY(calc(-100% - 4rem));
     animation: slide-down .4s cubic-bezier(.09,.57,.31,1.2) forwards;
+
+    &.close {
+      animation: slide-up .4s cubic-bezier(.91,-0.35,.9,1.04) forwards;
+    }
   }
+}
+
+.btn-modal-close {
+  position: absolute;
+  font-size: 2em;
+  border-color: transparent;
+  right: 1rem;
+  top: 1rem;
+  padding: 0;
 }
 
 [data-color-mode="light"] {
@@ -30,19 +43,10 @@
 
 [data-color-mode="dark"] {
   .modal {
-    background-color: rgba(28, 29, 34, .8);
+    background-color: rgba(28, 29, 34, .9);
 
     &-inner {
       background-color: rgb(28, 29, 34);
     }
-  }
-}
-
-@keyframes slide-down {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
   }
 }

@@ -6,7 +6,7 @@
   {{ $Pages = (.Paginate (where .Site.RegularPages "Section" "blog")).Pages }}
 {{ end }}
 
-<ul class='postlist'>
+<ul class='postlist no-list-style'>
   {{ range $Pages }}
   <li>
     <a href='{{ .Permalink }}' class='display-block'>

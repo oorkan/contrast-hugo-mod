@@ -1,28 +1,24 @@
-.post-share-btn {
-  display: block;
-  font-size: 1em;
-  color: currentColor;
-  background-color: transparent;
-  border: 1px solid var(--extraLightGray);
-  border-radius: 4px;
-  margin-top: 1rem;
-  outline: 0;
-  cursor: pointer;
-  padding: 2px 8px;
+.btn {
+  &-share {
+    border-color: var(--extraLightGray);
+    border-radius: 4px;
+    margin-top: 1rem;
+    padding: 2px 8px;
 
-  &::before {
-    content: '🪁';
-    margin-right: 4px;
-    margin-left: -2px;
+    &::before {
+      content: '🪁';
+      margin-right: 4px;
+      margin-left: -2px;
+    }
   }
-}
 
-.share-btn {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  vertical-align: top;
-  border-radius: 4px;
+  &-share-on {
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+    border-radius: 4px;
+    border-color: transparent;
+  }
 }
 
 .social-logo {
@@ -49,13 +45,10 @@
   }
 }
 
-.social-share {
-  > p { margin: 0; }
+.socialShare {
+  .title { margin: 0; }
   
   ul {
-    list-style: none;
-    padding: 0; margin: 0;
-
     li {
       display: inline-block;
 
