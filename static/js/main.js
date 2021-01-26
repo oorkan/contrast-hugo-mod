@@ -49,7 +49,7 @@
     `;
 
     if(post_share_btn) {
-      post_share_btn.addEventListener('click', () => {
+      post_share_btn.addEventListener('click', _ => {
         insertModal(modal_content, _ => { modalEvents(dom.querySelector('.modal')) });
       });
     }
