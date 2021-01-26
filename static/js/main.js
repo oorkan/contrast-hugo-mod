@@ -13,7 +13,7 @@
     let modal_inner = modal.querySelector('.modal-inner');
 
     modal.addEventListener('click', e => {
-      if(e.target != modal_inner && !e.target.closest(modal_inner.classList[0])) {
+      if(e.target != modal_inner && !e.target.closest(`.${modal_inner.classList[0]}`)) {
         closeModal(modal);
       }
     });
