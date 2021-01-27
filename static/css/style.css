@@ -740,9 +740,10 @@ nav a {
   margin-top: 1rem;
   padding: 2px 8px; }
   .btn-share::before {
-    content: '🪁';
+    content: '💾';
     margin-right: 4px;
-    margin-left: -2px; }
+    margin-left: -2px;
+    font-size: .9em; }
 
 .btn-share-on {
   white-space: nowrap;

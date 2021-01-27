@@ -6,9 +6,10 @@
     padding: 2px 8px;
 
     &::before {
-      content: '🪁';
+      content: '💾';
       margin-right: 4px;
       margin-left: -2px;
+      font-size: .9em;
     }
   }
 
