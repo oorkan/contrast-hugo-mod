@@ -23,9 +23,9 @@
     let modal_inner = modal.querySelector('.modal-inner');
 
     modal_inner.classList.add('close');
-    modal_inner.onanimationend  = () => {
+    modal_inner.addEventListener('animationend', _ => {
       modal.remove();
-    }
+    });
   };
   
   if(post_title && post_description && post_url) {
