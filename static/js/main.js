@@ -44,7 +44,6 @@
               <ul class='no-list-style no-spacing'>
                 <li><a href='https://twitter.com/intent/tweet?url=${encodeURIComponent(post_url.href)}&text=${encodeURIComponent(post_description.getAttribute('content'))}' target='_blank' rel='noopener noreferrer' title='Share on Twitter' class='btn-share-on social-logo-32 social-logo-twitter'>Share on Twitter</a></li>
                 <li><a href='https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(post_url.href)}' target='_blank' rel='noopener noreferrer' title='Share on Facebook' class='btn-share-on social-logo-32 social-logo-facebook'>Share on Facebook</a></li>
-                <li><a href='mailto:?subject=${encodeURIComponent(post_title.innerText)}=&body=${encodeURIComponent(post_description.getAttribute('content'))}' class='btn-share-on social-logo-32 social-logo-email'>Share via Email</a></li>
               </ul>  
               <input type='url' readonly='readonly' value='${post_url.href}' onfocus='this.select();'/>
             </div>
