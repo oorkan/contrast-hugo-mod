@@ -7,6 +7,7 @@
 
   const insertModal = (modal_content, callback) => {
     body.insertAdjacentHTML('afterbegin', modal_content); callback();
+    body.classList.add('no-overflow');
   }
 
   const modalEvents = modal => {
@@ -24,7 +25,7 @@
 
     modal_inner.classList.add('close');
     modal_inner.addEventListener('animationend', _ => {
-      modal.remove();
+      modal.remove(); body.classList.remove('no-overflow');
     });
   };
   

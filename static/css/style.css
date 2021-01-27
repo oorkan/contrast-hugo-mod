@@ -695,6 +695,9 @@ nav a {
 .hidden {
   display: none; }
 
+.no-overflow {
+  overflow: hidden; }
+
 .no-list-style {
   list-style-type: none; }
 
