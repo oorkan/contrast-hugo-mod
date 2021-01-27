@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @media (min-width: 50em) {
   @font-face {
     font-family: 'PT Sans';
@@ -26,24 +30,6 @@ html {
     @import 'highlighter/monokailight';
   }
 }
-
-// @media (prefers-color-scheme: light) {
-//   html {
-//     background: #ffffff;
-//     color: #1c1d22;
-//   }
-
-//   @import 'highlighter/monokailight';
-// }
-
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     background: #1c1d22;
-//     color: #ffffff;
-//   }
-
-//   @import 'highlighter/monokai';
-// }
 
 html {
   font-size: 16px;

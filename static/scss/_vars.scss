@@ -9,6 +9,7 @@ $extraLightViolet: hsl(267, 53%, 91%);
 $skyBlue: #00A4EF;
 $yellow: #FFB900;
 $lightGray: #7b7b7b;
+$extraLightGray: #cccccc;
 
 :root {
   --red: #{$red};
@@ -22,4 +23,5 @@ $lightGray: #7b7b7b;
   --skyBlue: #{$skyBlue};
   --yellow: #{$yellow};
   --lightGray: #{$lightGray};
+  --extraLightGray: #{$extraLightGray}
 }

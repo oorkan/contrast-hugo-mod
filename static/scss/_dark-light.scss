@@ -1,10 +1,6 @@
 .dl-mode-toggle {
   position: relative;
 
-  &, & * {
-    box-sizing: border-box;
-  }
-
   &.transition-set {
     .dl-mode-toggle-thumb,
     .dl-mode-toggle-track,
