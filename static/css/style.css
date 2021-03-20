@@ -854,3 +854,6 @@ nav a {
       text-decoration: none; }
       #paginate .pagination .page-item a:hover {
         color: var(--darkerRed); }
+
+.highlight .lntable .lntd:last-of-type {
+  width: 100%; }

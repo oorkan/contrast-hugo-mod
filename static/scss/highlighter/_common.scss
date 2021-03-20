@@ -1,0 +1,9 @@
+.highlight {
+  .lntable {
+    .lntd {
+      &:last-of-type {
+        width: 100%;
+      }
+    }
+  }
+}
