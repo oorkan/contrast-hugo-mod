@@ -857,3 +857,9 @@ nav a {
 
 .highlight .lntable .lntd:last-of-type {
   width: 100%; }
+
+html[data-color-mode="dark"] .chroma .hl {
+  background-color: rgba(142, 142, 145, 0.12); }
+
+html[data-color-mode="light"] .chroma .hl {
+  background-color: rgba(142, 142, 145, 0.12); }
