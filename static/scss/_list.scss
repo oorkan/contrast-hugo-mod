@@ -2,42 +2,218 @@
   list-style-type: none;
 }
 
+// REDESIGN
+
+[data-color-mode="light"] {
+  .posttag {
+    color: #333;
+
+    &_link {
+      background-color: white;
+      border: 1px solid #eee;
+    }  
+  }  
+}
+
+[data-color-mode="dark"] {
+  .posttag {
+    color: rgba(255,255,255,.8);
+
+    &_link {
+      background-color: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }  
+  }  
+}
+
+.posttag {
+  display: inline-block;
+  float: left;
+  font-size: rem(14, 16);
+  line-height: 0;
+
+  &:not(:last-of-type) {
+    margin-right: 5px;
+  }
+  
+  &_icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  &_link {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 4px 10px;
+  }
+  
+  &_title {
+    margin-bottom: 1px;
+  }
+}
+
+
+
+#site-header {
+  @media (min-width: 1280px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@font-face {
+  font-family: 'Ink Free';
+  src: url('/fonts/Inkfree.ttf');
+  src: local('Ink Free');
+}
+
 .postlist {
-  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  li {
-    padding: .25em 1em;
-    transition: margin .1s ease-out;
+  @media (min-width: 1280px) {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
 
-    a {
-      text-decoration: none;
-      font-weight: 700;
+  &_wrap {
+    display: grid;
+    
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
     }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+  }
+}
+
+.postcard {
+  display: flex;
+  flex-direction: column;
+  // border-color: #eee;
+  border-color: rgba(0,0,0,.08);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  // background-color: #fcfcfc;
+  background-color: rgba(0,0,0,.02);
+  overflow: hidden;
+  max-width: calc((1200px - 90px) / 4);
+  //transition: transform .1s ease-in-out;
+
+  &:hover {
+    //transform: skewY(-5deg);
+    // border-color: var(--skyBlue) !important;
+  }
+
+  &_blurb {
+    padding: 20px 20px 30px 20px;
+    height: 100%;
+  }
+
+  &_title {
+    font-family: 'Ink Free';
+    margin-bottom: 15px;
+
+    .heading {
+      font-size: 24px;
+      line-height: 1.2;
+      position: relative;
+      @include lhCrop(1.2);
+    }
+  }
+
+  &_date {
+    font-size: rem(10, 16);
+    font-weight: 600;
+    color: #64798A;
+    margin-bottom: 15px;
 
     time {
-      font-size: .65em;
-      text-transform: uppercase;
-      color: var(--lightGray);
+      @include lhCrop(1.5);
+    }
+  }
+
+  &_description {
+    color: #777;
+    
+    p {
+      @include lhCrop(1.5);
+    }
+  }
+
+  &_image {
+    a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    img {
+      margin: 0;
+      display: block;
+      height: 184px;
+      width: 100%;
+      object-fit: cover;
     }
 
-    &:hover {
-      margin-left: 1em;
+    img[aria-role="placeholder"] {
+      // opacity: .2;
+    }
+  }
+}
 
+[data-color-mode="dark"] {
+  .postcard {
+    border-color: rgba(255,255,255,.08);
+    background-color: rgba(255,255,255,.02);
+
+    // &_tags {
+    //   color: #999;
+    // }
+    &_image {
       a {
-        color: var(--skyBlue);
-
-        span {
-          &:before {
-            content: '⋙';
-            margin-right: .5rem;
-          }
-
-          &:after {
-            margin-left: .5rem;
-            content: '✨'
-          }
-        }
+        border-bottom: 1px solid rgba(255,255,255,.08);
       }
+
+      img[aria-role="placeholder"] {
+        // opacity: .1;
+      }
+    }
+
+    &_description {
+      color: #999;
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  margin: 20px 0 30px 0;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 2px;    
+    border-radius: 2px;
+  }
+
+  &-yellow {
+    &:after {
+      background-color: var(--yellow);
     }
   }
 }

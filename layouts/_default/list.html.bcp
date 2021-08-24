@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+{{ $Pages := .Pages }}
+
+{{ if .IsHome }}
+  {{ $Pages = (.Paginate (where .Site.RegularPages "Section" "blog")).Pages }}
+{{ end }}
+
+<ul class='postlist no-list-style'>
+  {{ range $Pages }}
+  <li>
+    <a href='{{ .Permalink }}' class='display-block'>
+      <span>{{ .Title }}</span>
+      <time class='display-block' datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+
+{{ partial "pagination.html" . }}
+
+{{ end }}

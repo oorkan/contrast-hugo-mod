@@ -33,13 +33,15 @@ html {
 
 html {
   font-size: 16px;
-  font-size: calc(0.8rem + 0.3vw);
+  //font-size: calc(0.8rem + 0.3vw);
 }
 
 body {
-  font-family: "PT Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  //font-family: "PT Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -119,12 +121,12 @@ pre {
 }
 
 :not(pre) > code {
-  font-size: .9em;
-  background: rgba(142, 142, 145, 0.15);
-  opacity: .7;
-  border-radius: 2px;
+  // font-size: .9em;
+  // background: rgba(142, 142, 145, 0.15);
+  opacity: .85;
+  // border-radius: 2px;
   margin: 0 .1em;
-  padding: .2em .4em;
+  // padding: .2em .4em;
 }
 
 article header {

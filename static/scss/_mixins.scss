@@ -3,3 +3,27 @@
     transition-duration: $time;
     transition-timing-function: $func;
 }
+
+@mixin lhCrop($line-height) {
+  $cut: calc((1 - #{$line-height}) * 0.5em);
+
+  &::before, 
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  &:before {
+    margin-top: $cut;
+  }
+
+  &::after {
+    margin-bottom: $cut;
+  }
+}
+
+@function rem($size, $base) {
+  @return #{$size/$base}rem;
+}

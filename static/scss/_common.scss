@@ -1,0 +1,42 @@
+.display-block {
+  display: block;
+}
+
+.text {
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}
+
+.archive li {
+  font-size: 1.1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.no-decor {
+  text-decoration: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+// floats
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
