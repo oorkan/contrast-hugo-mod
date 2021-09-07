@@ -1,0 +1,41 @@
+<div class='postcard'>
+    <div class="postcard_image">
+        {{ if .Params.Image }}
+        <a href="{{ .Permalink }}" class="no-decor display-block">
+        <img src="{{ .Params.Image }}" alt="hey hey">
+        </a>
+        {{ else }}
+        <a href="{{ .Permalink }}" class="no-decor display-block">
+        <img src="{{ .Site.Params.postcardPlaceholderImage }}" alt="image placeholder" aria-role="placeholder">
+        </a>
+        {{ end }}
+    </div>
+    <div class="postcard_blurb">
+        <div class="postcard_title">
+        <a href="{{ .Permalink }}" class="no-decor">
+            <h2 class="heading no-margin">{{ .Title }}</h2>
+        </a>
+        </div>
+        <div class="postcard_date">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 02, 2006" }}</time>
+        </div>
+        <ul class="posttags no-list-style no-spacing clearfix">
+        {{ range (.GetTerms "tags") }}
+        <li class="posttag no-spacing">
+            <a href="{{ .Permalink }}" class="posttag_link no-decor">
+            <svg class="posttag_icon">
+                <use xlink:href="#sprite-{{ .LinkTitle }}-logo"></use>
+            </svg>
+            <span class="posttag_title">#{{ .LinkTitle }}</span>
+            </a>
+        </li>
+        {{ end }}
+        </ul>
+        <div class="divider divider-yellow"></div>
+        <div class="postcard_description">
+        <a href="{{ .Permalink }}" class="no-decor">
+            <p class="no-margin">{{ .Description }}</p>
+        </a>
+        </div>
+    </div>
+</div>
