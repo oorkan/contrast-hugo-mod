@@ -19,7 +19,7 @@
         </a>
         {{ else }}
         <a href="{{ .Permalink }}" class="no-decor display-block">
-          <img src="/img/cat-with-camera-bw-278x184-01.png" alt="image placeholder" aria-role="placeholder">
+          <img src="{{ .Site.Params.postcardPlaceholderImage }}" alt="image placeholder" aria-role="placeholder">
         </a>
         {{ end }}
       </div>
