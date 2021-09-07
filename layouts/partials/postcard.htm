@@ -1,10 +1,10 @@
 {{ $imageurl := .Params.image }}
 
-{{ if .Site.Params.postcardimageScaleFactor }}
+{{ if .Site.Params.postcardimageScale }}
     {{ $imageurl = split $imageurl "/upload/" }}
     {{ $imageurl = printf "%s%s%s%s%s" 
         (index $imageurl 0) 
-        "/upload/c_scale,w_" (string .Site.Params.postcardimageScaleFactor) "/"
+        "/upload/c_scale,w_" (string .Site.Params.postcardimageScale) "/"
         (index $imageurl 1)
     }}
 {{ end }}
