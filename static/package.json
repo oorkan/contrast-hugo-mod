@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/oorkan/scss-to-css#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^6.0.1"
   }
 }
