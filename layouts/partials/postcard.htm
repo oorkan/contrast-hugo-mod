@@ -1,8 +1,19 @@
+{{ $imageurl := .Params.image }}
+
+{{ if .Site.Params.postcardimageScaleFactor }}
+    {{ $imageurl = split $imageurl "/upload/" }}
+    {{ $imageurl = printf "%s%s%s%s%s" 
+        (index $imageurl 0) 
+        "/upload/c_scale,w_" (string .Site.Params.postcardimageScaleFactor) "/"
+        (index $imageurl 1)
+    }}
+{{ end }}
+
 <div class='postcard'>
     <div class="postcard_image">
-        {{ if .Params.Image }}
+        {{ if .Params.image }}
         <a href="{{ .Permalink }}" class="no-decor display-block">
-        <img src="{{ .Params.Image }}" alt="Post image" loading="lazy">
+        <img src="{{ $imageurl }}" alt="Post image" loading="lazy">
         </a>
         {{ else }}
         <a href="{{ .Permalink }}" class="no-decor display-block">
