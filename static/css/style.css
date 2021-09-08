@@ -746,8 +746,7 @@ nav a {
 
 @font-face {
   font-family: 'Ink Free';
-  src: url("/fonts/Inkfree.ttf");
-  src: local("Ink Free"); }
+  src: local("Ink Free"), url("https://res.cloudinary.com/oorkan/raw/upload/v1631061227/blog/fonts/general/inkfree_rfosjg.ttf"); }
 
 .postlist {
   display: flex;
