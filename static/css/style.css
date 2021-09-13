@@ -972,7 +972,7 @@ nav a {
     background-color: #1c1d22; }
 
 #paginate .pagination {
-  padding: 0 3rem;
+  padding: 0;
   margin: 2rem 0;
   list-style-type: none; }
   #paginate .pagination .page-item {
