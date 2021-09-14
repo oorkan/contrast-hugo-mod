@@ -4,12 +4,12 @@
   <ul class="pagination">
     {{ if $pag.HasPrev }}
     <li class="page-item">
-      <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}"{{ end }} class="page-link" aria-label="Previous"><span aria-hidden="true">⮪&nbsp;Prev Page</span></a>
+      <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}"{{ end }} class="page-link" aria-label="Previous"><span aria-hidden="true">&larr;&nbsp;Prev Page</span></a>
     </li>
     {{ end }}
     {{ if $pag.HasNext }}
     <li class="page-item">
-      <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}"{{ end }} class="page-link" aria-label="Next"><span aria-hidden="true">Next Page&nbsp;⮫</span></a>
+      <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}"{{ end }} class="page-link" aria-label="Next"><span aria-hidden="true">Next Page&nbsp;&rarr;</span></a>
     </li>
     {{ end }}
   </ul>
