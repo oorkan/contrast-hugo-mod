@@ -1,24 +1,26 @@
 {
-  "name": "sass-to-css",
-  "version": "1.0.0",
-  "description": "Simple scss to css npm task runner",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass scss/style.scss css/style.css",
-    "scss:watch": "npm run scss && npm run scss -- -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oorkan/scss-to-css.git"
-  },
-  "author": "oorkan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oorkan/scss-to-css/issues"
-  },
-  "homepage": "https://github.com/oorkan/scss-to-css#readme",
-  "dependencies": {
-    "node-sass": "^6.0.1"
-  }
+    "name": "mini-task-runner",
+    "version": "1.0.0",
+    "description": "Simple scss to css npm task runner",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass --style=compressed scss/style.scss css/style.css",
+        "stylelint": "stylelint -f verbose css/style.css",
+        "js": "src=js/src/; dest=js/; find $src -type f -name \"*.js\" ! -name \"*.min.js\" -exec /bin/bash task-runner.sh build:js {} $src $dest \\;",
+        "build:sass": "/bin/bash task-runner.sh build:sass",
+        "watch:sass": "chokidar 'scss/**/*.scss' -c '/bin/bash task-runner.sh {event} {path}'",
+        "build:js": "npm run js",
+        "watch:js": "chokidar 'js/src/**/*.js' -c '/bin/bash task-runner.sh {event} {path}'",
+        "build": "npm run build:sass && npm run build:js",
+        "watch": "chokidar 'scss/**/*.scss' 'js/src/**/*.js' -c '/bin/bash task-runner.sh {event} {path}'"
+    },
+    "repository": {},
+    "author": "triode",
+    "devDependencies": {
+        "chokidar-cli": "^3.0.0",
+        "sass": "^1.51.0",
+        "stylelint": "^14.8.1",
+        "terser": "^5.16.1"
+    }
 }

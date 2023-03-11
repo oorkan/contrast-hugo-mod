@@ -1,7 +1,9 @@
-<footer id="site-footer" class="offset">
-    {{ if .Site.Menus.social }}
-  
-    {{ else }}
-      <p class='text-right'>&copy; {{ now.Format "2006" }}</p>
-    {{ end }}
+<footer id="site-footer" class="offset-top offset-bottom">
+{{ if .Site.Menus.social }}
+
+{{ end }}
+{{- if .Site.Params.darkMode }}
+    {{ partial "dl-mode-toggle.htm" . }}
+{{- end }}
+    <p class='text-right'>&copy; {{ now.Format "2006" }}</p>
 </footer>

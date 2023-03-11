@@ -1,19 +1,32 @@
 {{ define "main" }}
 
+{{ $isTagsPage := false }}
+
+{{ if and (eq .Type "tags") (eq (lower .Name) "tags") }}
+    {{ $isTagsPage = true }}
+{{ end }}
+
 {{ $Pages := .Pages }}
 
 {{ if .IsHome }}
-  {{ $Pages = (.Paginate (where .Site.RegularPages "Section" "blog")).Pages }}
+    {{/* $Pages = (.Paginate (where .Site.RegularPages "Section" "blog")).Pages */}}
+    {{ $Pages = (.Paginate .Site.RegularPages).Pages }}
 {{ end }}
 
 {{ partial "sprites.htm" . }}
 
 <div class="postlist" role="list">
-  <div class="postlist_wrap">
-  {{ range $Pages }}
-    {{ partial "postcard.htm" . }}
-  {{ end }}
-  </div>
+    <div class="postlist_wrap">
+    {{ if not $isTagsPage }}
+        {{ range $Pages }}
+            {{ partial "postcard.htm" . }}
+        {{ end }}
+    {{ else }}
+        {{ range $Pages }}
+            {{ partial "postcard-tags-page.htm" . }}
+        {{ end }}
+    {{ end }}
+    </div>
 </div>
 
 {{ partial "pagination.html" . }}

@@ -1,0 +1,9 @@
+<nav id="primary-nav">
+    <ul class="menu menu-horizontal">
+        {{ range .Site.Menus.top }}
+        <li class="menu-item">
+            <a href="{{ .URL }}" class="link no-decor">{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>

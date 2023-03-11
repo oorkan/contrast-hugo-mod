@@ -8,7 +8,7 @@
 {{- end }}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet"> -->
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 <link rel="canonical" href="{{ .Permalink }}">
@@ -28,23 +28,37 @@ ga('send', 'pageview');
 {{ end }}
 
 <body class="{{- if .Site.Params.dark_mode }}dl-mode-enabled{{- end }}">
+    <div id="page">
+        <header id="site-header" class="offset-top">
+            <div style="display: flex;">
+                <a href="{{ .Site.BaseURL }}" class="site-logo">
+                    <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" width="48" height="48">
+                    {{- if .Site.Params.darkMode }}
+                    {{- if .Site.Params.logoDark }}
+                    <img src="{{ .Site.Params.logoDark }}" alt="{{ .Site.Title }}" width="48" height="48">
+                    {{- end }}
+                    {{- end }}
+                    <!-- <span>{{ .Site.Title }}</span> -->
+                </a>
 
-<header id="site-header" class="offset">
-  <a href="{{ .Site.BaseURL }}" class="site-logo">
-    <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" width="48" height="48">
-    <span>{{ .Site.Title }}</span>
-  </a>
-  {{- if .Site.Params.darkMode }}
-  {{ partial "dl-mode-toggle.htm" . }}
-  {{- end }}
-</header>
+                {{- if .Site.Menus.top }}
+                {{ partial "menu-top.htm" . }}
+                {{- end }}
+            </div>
 
-<main id="page-content" class="offset">
-  {{- block "main" . }}{{- end }}
-</main>
+            <div style="display: flex;">
+                <form class="site-search">
+                    <input type="search" placeholder="Search">
+                </form>
+            </div>
+        </header>
 
-{{ partial "footer.htm" . }}
+        <main id="page-content" class="offset">
+            {{- block "main" . }}{{- end }}
+        </main>
 
+        {{ partial "footer.htm" . }}
+    </div>
+    <script src='/js/main.min.js'></script>
 </body>
-
 </html>

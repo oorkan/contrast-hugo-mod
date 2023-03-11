@@ -1,34 +1,16 @@
-{{ $imageurl := .Params.image }}
-
-{{ if .Site.Params.postcardimageScale }}
-    {{ $imageurl = split $imageurl "/upload/" }}
-    {{ $imageurl = printf "%s%s%s%s%s"
-        (index $imageurl 0)
-        "/upload/c_scale,w_" (string .Site.Params.postcardimageScale) "/"
-        (index $imageurl 1)
-    }}
-{{ end }}
+{{ $imageurl := printf "/%s-tag-logo.svg" .Name }}
 
 <div class='postcard'>
     <div class="postcard_image">
-        {{ if .Params.image }}
         <a href="{{ .Permalink }}" class="no-decor display-block">
-                <img src="{{ $imageurl }}" alt="Post image" loading="lazy">
+            <img src="{{ $imageurl }}" alt="Post image" loading="lazy">
         </a>
-        {{ else }}
-        <a href="{{ .Permalink }}" class="no-decor display-block">
-                <img src="{{ .Site.Params.postcardPlaceholderImage }}" alt="no image" aria-role="placeholder">
-        </a>
-        {{ end }}
     </div>
     <div class="postcard_blurb">
         <div class="postcard_title">
             <a href="{{ .Permalink }}" class="no-decor">
                 <h2 class="heading no-margin">{{ .Title }}</h2>
             </a>
-        </div>
-        <div class="postcard_date">
-            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 02, 2006" }}</time>
         </div>
         <ul class="posttags no-list-style no-spacing clearfix">
         {{ range (.GetTerms "tags") }}
@@ -42,7 +24,6 @@
             </li>
         {{ end }}
         </ul>
-        <div class="divider divider-yellow"></div>
         <div class="postcard_description">
             <a href="{{ .Permalink }}" class="no-decor">
                 <p class="no-margin">{{ .Description }}</p>
