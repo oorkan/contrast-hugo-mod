@@ -1,0 +1,13 @@
+.menu {
+        list-style-type: none;
+
+        &-horizontal {
+                > .menu-item {
+                        display: inline-block;
+                }
+        }
+}
+
+#primary-nav {
+
+}

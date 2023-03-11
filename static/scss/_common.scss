@@ -1,42 +1,54 @@
 .display-block {
-  display: block;
+    display: block;
 }
 
 .text {
-  &-right {
-    text-align: right;
-  }
+    &-right {
+        text-align: right;
+    }
 
-  &-center {
-    text-align: center;
-  }
+    &-center {
+        text-align: center;
+    }
+}
+
+.offset {
+    padding: 1.5rem;
+
+    &-top {
+        padding-top: 1.5rem;
+    }
+
+    &-bottom {
+        padding-bottom: 1.5rem;
+    }
 }
 
 .archive li {
-  font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .no-overflow {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .no-decor {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .no-margin {
-  margin: 0;
+    margin: 0;
 }
 
 // floats
 .clearfix {
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
