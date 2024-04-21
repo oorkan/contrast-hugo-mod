@@ -35,9 +35,9 @@
             <li class="posttag no-spacing">
                 <a href="{{ .Permalink }}" class="posttag_link no-decor">
                     <svg class="posttag_icon">
-                        <use xlink:href="#sprite-{{ .LinkTitle }}-logo"></use>
+                        <use xlink:href="#sprite-{{ lower .LinkTitle }}-logo"></use>
                     </svg>
-                    <span class="posttag_title">#{{ .LinkTitle }}</span>
+                    <span class="posttag_title">#{{ lower .LinkTitle }}</span>
                 </a>
             </li>
         {{ end }}
